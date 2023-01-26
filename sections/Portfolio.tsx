@@ -9,8 +9,8 @@ type Props = {}
 
 const Portfolio = (props: Props) => {
   return (
-    <div>
-      <h1 className='font-semibold text-4xl my-16'>Portfolio</h1>
+    <div className='min-h-screen'>
+      <h1 className='font-semibold text-4xl mb-12'>Portfolio</h1>
       <section>
         <div className='grid grid-cols-2 auto-cols-max gap-10'>
           <div className='box-content [&>*]:shadow-lg [&>*]:rounded-xl'>
@@ -40,6 +40,14 @@ const Portfolio = (props: Props) => {
                 Saiba mais
               </button>
             </div>
+          </div>
+        </div>
+        <div className='grid grid-cols-3 auto-cols-max gap-6 mt-10'>          
+          <div className='box-content [&>*]:shadow-lg [&>*]:rounded-xl'>
+            <Image 
+              alt="spotify browser" 
+              src={spotifyPic} 
+            />
           </div>
           <div className='box-content [&>*]:shadow-lg [&>*]:rounded-xl'>
             <Image 

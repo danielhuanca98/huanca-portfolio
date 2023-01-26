@@ -46,7 +46,7 @@ const Header = (props: Props) => {
   }, [])
 
   return (
-    <header className='h-32 flex flex-row items-center justify-between'>
+    <header className='h-32 flex flex-row items-center justify-between snap-start'>
         <Logo fill={'none'} stroke={'currentColor'} />
         <ul className='flex gap-4'>
           {navigations.map(nav => (

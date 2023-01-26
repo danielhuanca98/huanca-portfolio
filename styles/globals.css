@@ -5,8 +5,12 @@
 @layer base {
   body {
     @apply max-w-4xl  mx-auto px-4;
-    @apply dark:bg-[#0F0E17] dark:text-gray-50 bg-gray-50 text-[#0F0E17] transition-colors
+    @apply dark:bg-[#0F0E17] dark:text-gray-50 bg-gray-50 text-[#0F0E17] transition-colors;
   }
+}
+
+html {
+  @apply snap-y snap-mandatory overscroll-y-contain
 }
 
 * {

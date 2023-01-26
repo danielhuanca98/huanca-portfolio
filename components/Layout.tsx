@@ -4,6 +4,7 @@ import React, { ReactNode } from 'react'
 import Header from 'sections/Header'
 import Footer from 'sections/Footer'
 import About from 'sections/About'
+import Separator from 'components/Separator'
 
 import Portfolio from 'sections/Portfolio'
 
@@ -27,8 +28,10 @@ const Layout = (props: Props) => {
         </main>
         
       </div>
+      <Separator/>
       <Portfolio/>
-      <About/>
+      <Separator/>
+      <About/>      
       <Footer/>
     </>
   )
